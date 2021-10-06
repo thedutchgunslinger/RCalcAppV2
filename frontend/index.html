@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.7.4/dist/css/uikit.min.css"
+    />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- <form>
+      <label for="email">First name:</label>
+      <input type="text" id="email" placeholder="email" /><br /><br />
+      <label for="wachtwoord">Last name:</label>
+      <input type="password" id="wachtwoord" /><br /><br />
+      <input type="button" value="Log in!" id="loginBtn" />
+    </form> -->
+
+    <div
+      class="
+        uk-flex uk-flex-column uk-width-1-1 uk-background-primary
+        formContainer
+      "
+      uk-height-viewport="expand: true"
+    >
+      <form
+        class="
+          uk-form-stacked
+          uk-position-small
+          uk-margin-expand-top
+          uk-margin-auto-bottom
+        "
+      >
+        <h1>Login</h1>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="uk-form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="uk-textarea uk-background-primary"
+            id="email"
+            aria-describedby="emailHelp"
+            name="email"
+            placeholder="Example@mail.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="uk-form-label"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="uk-textarea uk-background-primary"
+            id="wachtwoord"
+            name="wachtwoord"
+            placeholder="Password"
+          />
+        </div>
+        <button
+          type="submit"
+          class="
+            uk-button uk-button-default uk-display-block uk-margin-small-top
+            buttonWhiteText
+            uk-width-1-1
+          " id= "loginBtn"
+        >
+          log In
+        </button>
+        <a href="register.php" class="uk-text-center">Need an account?</a>
+      </form>
+    </div>
+    <h1 id="errorText"></h1>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.4/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
